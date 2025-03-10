@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url(https://i.imgur.com/XbRg9D7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #0066cc, #ffffff);
+}
+
+.logo-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: auto;
+  box-sizing: border-box;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 18px;
+  width: 400px;
+  border: none;
+}
+
+.bemVindo h2 {
+  font-size: 30px;
+  color: #000;
+  margin: 10px 0; 
+  text-align: center;
+  transform: translateX(650px);
+  font-family: 'Arial', sans-serif;
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.logo img {
+  width: 609px;
+  height: auto;
+  border: none;
+  display: block;
+  border-top-left-radius: 50px; /* Arredonda o canto superior esquerdo */
+  border-bottom-left-radius: 50px; /* Arredonda o canto inferior esquerdo */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  color: #090909;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold; /* Deixa o texto em negrito */
+  transform: translateX(-90px); /* Ajuste o valor para mover para a esquerda */
+}
+
+.label-float-container {
+  border-radius: 4px; /* Adiciona borda arredondada */
+  margin-bottom: 10px; /* Adiciona espaçamento entre os campos */
+}
+
+.label-float {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px; /* Espaço entre os campos */
+}
+
+
+.label-float i {
+  position: absolute;
+  left: 15px; /* Ajuste fino para alinhar melhor */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: 18px;
+}
+
+/* Campo de entrada */
+.label-float input {
+  width: calc(100% - 90px);
+  padding: 20px 15px 12px 45px;
+  border: none;
+  background-color: #d3d3d3;
+  outline: none;
+  font-size: 16px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+/* Quando o usuário digita ou foca no campo, o label sobe */
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  top: 5px;
+  font-size: 12px;
+  color: #010f0d;
+}
+
+/* Rótulo dentro do campo */
+.label-float label {
+  position: absolute;
+  left: 45px; /* Mantém alinhado ao input */
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  font-size: 16px;
+  color: #666;
+  pointer-events: none;
+}
+
+#curso:hover {
+  border-color: #1c8cf5; /* Mudança na borda quando o usuário passar o mouse */
+}
+
+#permissao:hover {
+  border-color: #1c8cf5;
+}
+
+/* Estilo do botão */
+button {
+  background-color: rgb(14, 113, 167); /* Azul claro */
+  color: white; /* Texto branco */
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  display: block; /* Garante que o botão ocupe toda a largura disponível */
+  margin-left: auto; /* Move o botão para a direita */
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
